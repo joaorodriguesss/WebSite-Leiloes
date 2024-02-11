@@ -1,0 +1,38 @@
+﻿@page "/Login"
+@model SiteLeiloes.Pages.Utilizador.LoginsModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carense</title>
+    <link href="~/css/logins.css" rel="stylesheet">
+    <script src="~/js/logins.js"></script>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="~/images/carensesimbolo.png" alt="Logotipo Carense" class="logo-normal">
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Login</h2>
+            <form id="loginForm" method="post" asp-page="/Logins">
+                @Html.AntiForgeryToken()
+                <div class="input-box">
+                    <label for="username">Username:</label>
+                    <input id="username" name="Input.Username" asp-for="Input.Username" required="" placeholder="Username">
+                    <span asp-validation-for="Input.Username" class="text-danger"></span>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password:</label>
+                    <input id="password" name="Input.Password" asp-for="Input.Password" type="password" required="" placeholder="Password">
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+            <a href="/" class="account-link">Ainda não possui conta?</a>
+        </div>
+</body>
+</html>

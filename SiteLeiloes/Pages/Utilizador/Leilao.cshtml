@@ -1,0 +1,99 @@
+﻿@page "/Leilao/{Id}"
+@model SiteLeiloes.Pages.Utilizador.LeilaoModel
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Leilões</title>
+    <link href="~/css/leilao.css" rel="stylesheet">
+    <link href="~/css/background.css" rel="stylesheet">
+    <script src="~/js/leilao.js" defer></script>
+</head>
+<body>
+    <img src="/images/logoPalavras.png" alt="Logo" id="logo">
+    <div class="sidebar">
+        <div class="menu-button"><a href="/PagInicial/"></a></div>
+        <div class="menu-button"><a href="/PaginaUser/"></a></div>
+        <div class="menu-button"><a href="/PaginaGaragem/" /></a></div>
+        <div class="menu-button"><a href="/LicitacoesUser/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFavoritos/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFuturos/"></a></div>
+        <div class="menu-button"><a href="/AtividadeUser/"></a></div>
+    </div>
+    <div class="page-background"></div>
+    <div class="content">
+        <div class="header">
+            <div class="header-content">
+                <h1>@Model.Leilao.MarcaCarro - @Model.Leilao.ModeloCarro -  @Model.Leilao.AnoCarro - @Model.Leilao.KmCarro KM</h1>
+                <img src="/images/estrela_vazia.png" alt="Outra Imagem" class="secondary-image" onclick="toggleFavorite(this)" data-leilao-id="@Model.Leilao.Id" />
+            </div>
+        </div>
+        <div class="car-image">
+            <img src=@Model.Leilao.ImagemCarro alt=@Model.Leilao.ModeloCarro />
+        </div>
+        <div class="auction-info">
+            <div class="current-bid">
+                <span>LICITAÇÃO ATUAL</span>
+                <strong>€ @Model.Leilao.Valor</strong>
+            </div>
+            <div class="details">
+                <span>@Model.Leilao.AnoCarro</span>
+                <span>@Model.Leilao.CondicaoCarro</span>
+                <span>@Model.Leilao.KmCarro km</span>
+                <span>Iva não dedutível</span>
+            </div>
+            <form method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="Leilao.Id" />
+                <div class="bid">
+                    <label for="bid-value">Fazer Licitação</label>
+                    <input type="number" id="bid-value" name="BidValue" min="@Model.Leilao.Valor" />
+                    <button type="submit">LICITAR</button>
+                </div>
+            </form>
+        </div>
+        <div class="auction-timer">
+            <span class="tempo-restante" data-data-inicio="@Model.Leilao.Data_de_inicio.ToString("yyyy-MM-ddTHH:mm:ss")" data-data-fim="@Model.Leilao.Data_de_fim.ToString("yyyy-MM-ddTHH:mm:ss")">Calculando...</span>
+        </div>
+    </div>
+    <script>
+        function atualizarTempoRestante() {
+            var elementosTempoRestante = document.querySelectorAll(".tempo-restante");
+            elementosTempoRestante.forEach(function (elemento) {
+                var dataInicio = new Date(elemento.getAttribute("data-data-inicio"));
+                var dataFim = new Date(elemento.getAttribute("data-data-fim"));
+                var dataAtual = new Date();
+                var tempoRestante_para_comecar = dataInicio - dataAtual;
+                var tempoRestante_para_acabar = dataFim - dataAtual;
+                if (tempoRestante_para_comecar > 0) {
+                    var horas = Math.floor(tempoRestante_para_comecar / 3600000);
+                    tempoRestante_para_comecar = tempoRestante_para_comecar % 3600000;
+                    var minutos = Math.floor(tempoRestante_para_comecar / 60000);
+                    tempoRestante_para_comecar = tempoRestante_para_comecar % 60000;
+                    var segundos = Math.floor(tempoRestante_para_comecar / 1000);
+                    elemento.textContent = "Começa em: " + horas + ":" + minutos + ":" + segundos;
+                }
+                else {
+                    if (tempoRestante_para_acabar > 0) {
+                        var horas = Math.floor(tempoRestante_para_acabar / 3600000);
+                        tempoRestante_para_acabar = tempoRestante_para_acabar % 3600000;
+                        var minutos = Math.floor(tempoRestante_para_acabar / 60000);
+                        tempoRestante_para_acabar = tempoRestante_para_acabar % 60000;
+                        var segundos = Math.floor(tempoRestante_para_acabar / 1000);
+                        elemento.textContent = "Acaba em: " + horas + ":" + minutos + ":" + segundos;
+                    }
+                    else {
+                        elemento.textContent = "O Leilão já acabou";
+                    }
+                }
+            });
+        }
+
+        setInterval(atualizarTempoRestante, 1000);
+
+        atualizarTempoRestante();
+    </script>
+</body>
+</html>

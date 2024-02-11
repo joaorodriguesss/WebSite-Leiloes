@@ -1,0 +1,53 @@
+﻿@page "/Carro/{Id}"
+@model SiteLeiloes.Pages.Utilizador.CarroModel
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Leilões</title>
+    <link href="~/css/leilao.css" rel="stylesheet">
+    <link href="~/css/background.css" rel="stylesheet">
+</head>
+<body>
+    <img src="/images/logoPalavras.png" alt="Logo" id="logo">
+    <div class="sidebar">
+        <div class="menu-button"><a href="/PagInicial/"></a></div>
+        <div class="menu-button"><a href="/PaginaUser/"></a></div>
+        <div class="menu-button"><a href="/PaginaGaragem/" /></a></div>
+        <div class="menu-button"><a href="/LicitacoesUser/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFavoritos/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFuturos/"></a></div>
+        <div class="menu-button"><a href="/AtividadeUser/"></a></div>
+    </div>
+    <div class="page-background"></div>
+    <div class="content">
+        <div class="header">
+            <h1>@Model.Carro.MarcaCarro - @Model.Carro.ModeloCarro -  @Model.Carro.AnoCarro - @Model.Carro.KmCarro KM</h1>
+        </div>
+        <div class="car-image">
+            <img src=@Model.Carro.ImagemCarro alt="@Model.Carro.ModeloCarro" />
+        </div>
+        <div class="auction-info">
+            <div class="current-bid">
+                <strong>CRIAR LEILÃO</strong>
+            </div>
+            <div class="details">
+                <span>@Model.Carro.AnoCarro</span>
+                <span>@Model.Carro.CondicaoCarro</span>
+                <span>@Model.Carro.KmCarro km</span>
+            </div>
+            <form method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="CarroId" value="@Model.Carro.Id" />
+                <input name = "PrecoMinimo" required="" placeholder="Preço Inicial" />
+                <input name="DataDeInicio" required="" type="date" />
+                <input name="DataDeFim" required="" type="date" />
+                <button type="submit">Criar Leilão</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

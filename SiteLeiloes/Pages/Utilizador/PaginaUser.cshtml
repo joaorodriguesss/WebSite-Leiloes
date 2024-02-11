@@ -1,0 +1,71 @@
+﻿@page "/PaginaUser/"
+
+@model SiteLeiloes.Pages.Utilizador.PaginaUserModel
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Leilões</title>
+    <link href="~/css/pagUser.css" rel="stylesheet">
+    <link href="~/css/background.css" rel="stylesheet">
+</head>
+<body>
+    <img src="/images/logoPalavras.png" alt="Logo" id="logo">
+    <div class="sidebar">
+        <div class="menu-button"><a href="/PagInicial/"></a></div>
+        <div class="menu-button"><a href="/PaginaUser/"></a></div>
+        <div class="menu-button"><a href="/PaginaGaragem/" /></a></div>
+        <div class="menu-button"><a href="/LicitacoesUser/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFavoritos/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFuturos/"></a></div>
+        <div class="menu-button"><a href="/AtividadeUser/"></a></div>
+    </div>
+    <div class="page-background"></div>
+    <div class="perfil-container">
+        <h1>Perfil</h1>
+    </div>
+    <br>
+    <div class="perfil-info-container">
+    <div class="perfil-container">
+        <h2>Username </h2>
+        <span>@Model.Utilizador.Username</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Email </h2>
+        <span>@Model.Utilizador.Email</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Nome </h2>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Idade </h2>
+    </div>
+
+    <div class="perfil-container">
+        <h2>CC </h2>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Nif </h2>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Telefone </h2>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Avaliação</h2>
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+    </div>
+    </div>
+</body>
+</html>

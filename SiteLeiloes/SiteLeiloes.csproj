@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Data\LeilaoData.cs" />
+		<Compile Remove="Models\Auction.cs" />
+		<Compile Remove="Pages\Utilizador\LeiloesFavoritos.cs" />
+		<Compile Remove="Pages\Utilizador\Login.cshtml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Remove="Pages\Utilizador\Login.cshtml" />
+		<Content Remove="wwwroot\css\login.css" />
+		<Content Remove="wwwroot\images\corsa.jpg" />
+		<Content Remove="wwwroot\images\e36m3.webp" />
+		<Content Remove="wwwroot\images\menu_availableNow.png" />
+		<Content Remove="wwwroot\js\login.js" />
+		<Content Remove="wwwroot\js\pagInicial.js" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.0" />
+	</ItemGroup>
+
+</Project>

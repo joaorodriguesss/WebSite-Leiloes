@@ -1,0 +1,205 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\acessoNegado.css",
+      "PackagePath": "staticwebassets\\css\\acessoNegado.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\adicionarCarro.css",
+      "PackagePath": "staticwebassets\\css\\adicionarCarro.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\background.css",
+      "PackagePath": "staticwebassets\\css\\background.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\carro.css",
+      "PackagePath": "staticwebassets\\css\\carro.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\leilao.css",
+      "PackagePath": "staticwebassets\\css\\leilao.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\logins.css",
+      "PackagePath": "staticwebassets\\css\\logins.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagAtividadeUser.css",
+      "PackagePath": "staticwebassets\\css\\pagAtividadeUser.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagGaragem.css",
+      "PackagePath": "staticwebassets\\css\\pagGaragem.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagInicial.css",
+      "PackagePath": "staticwebassets\\css\\pagInicial.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLeiloesFavoritos.css",
+      "PackagePath": "staticwebassets\\css\\pagLeiloesFavoritos.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLeiloesFuturos.css",
+      "PackagePath": "staticwebassets\\css\\pagLeiloesFuturos.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLicitacoesUser.css",
+      "PackagePath": "staticwebassets\\css\\pagLicitacoesUser.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagUser.css",
+      "PackagePath": "staticwebassets\\css\\pagUser.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\190evo.jpg",
+      "PackagePath": "staticwebassets\\images\\190evo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\BMW-E36-M3.jpg",
+      "PackagePath": "staticwebassets\\images\\BMW-E36-M3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\austinMini.png",
+      "PackagePath": "staticwebassets\\images\\austinMini.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\backgroundInicio.png",
+      "PackagePath": "staticwebassets\\images\\backgroundInicio.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\bugatti.jpg",
+      "PackagePath": "staticwebassets\\images\\bugatti.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\carensesimbolo.jpg",
+      "PackagePath": "staticwebassets\\images\\carensesimbolo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\carensesimbolo.png",
+      "PackagePath": "staticwebassets\\images\\carensesimbolo.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\corsab.jpg",
+      "PackagePath": "staticwebassets\\images\\corsab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\e30.jpg",
+      "PackagePath": "staticwebassets\\images\\e30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\estrela_dourada.png",
+      "PackagePath": "staticwebassets\\images\\estrela_dourada.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\estrela_vazia.png",
+      "PackagePath": "staticwebassets\\images\\estrela_vazia.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\ferrari.png",
+      "PackagePath": "staticwebassets\\images\\ferrari.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\ferrari348.jpg",
+      "PackagePath": "staticwebassets\\images\\ferrari348.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\ferrari456.png",
+      "PackagePath": "staticwebassets\\images\\ferrari456.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\fundo.png",
+      "PackagePath": "staticwebassets\\images\\fundo.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\gtr.png",
+      "PackagePath": "staticwebassets\\images\\gtr.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\icone+.png",
+      "PackagePath": "staticwebassets\\images\\icone+.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\jipe.png",
+      "PackagePath": "staticwebassets\\images\\jipe.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\lamboHuracan.png",
+      "PackagePath": "staticwebassets\\images\\lamboHuracan.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\lamboUrus.png",
+      "PackagePath": "staticwebassets\\images\\lamboUrus.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\lancia.jpg",
+      "PackagePath": "staticwebassets\\images\\lancia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\loginfoto.png",
+      "PackagePath": "staticwebassets\\images\\loginfoto.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\logoPalavras.png",
+      "PackagePath": "staticwebassets\\images\\logoPalavras.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\menu.png",
+      "PackagePath": "staticwebassets\\images\\menu.png"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\paginicial.jpg",
+      "PackagePath": "staticwebassets\\images\\paginicial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\porsche911.jpg",
+      "PackagePath": "staticwebassets\\images\\porsche911.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\rimac.jpg",
+      "PackagePath": "staticwebassets\\images\\rimac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\adicionarCarro.js",
+      "PackagePath": "staticwebassets\\js\\adicionarCarro.js"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\leilao.js",
+      "PackagePath": "staticwebassets\\js\\leilao.js"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\logins.js",
+      "PackagePath": "staticwebassets\\js\\logins.js"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\perfil.js",
+      "PackagePath": "staticwebassets\\js\\perfil.js"
+    },
+    {
+      "Id": "C:\\Users\\35193\\source\\repos\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\register.js",
+      "PackagePath": "staticwebassets\\js\\register.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SiteLeiloes.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SiteLeiloes.props",
+      "PackagePath": "build\\SiteLeiloes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SiteLeiloes.props",
+      "PackagePath": "buildMultiTargeting\\SiteLeiloes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SiteLeiloes.props",
+      "PackagePath": "buildTransitive\\SiteLeiloes.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,91 @@
+﻿@page "/AtividadeUser/"
+@using SiteLeiloes.Models
+@model SiteLeiloes.Pages.Utilizador.AtividadeUser.AtividadeUserModel
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Leilões</title>
+    <link href="~/css/pagInicial.css" rel="stylesheet">
+    <link href="~/css/background.css" rel="stylesheet">
+</head>
+<body>
+    <img src="/images/logoPalavras.png" alt="Logo" id="logo">
+    <div class="sidebar">
+        <div class="menu-button"><a href="/PagInicial/"></a></div>
+        <div class="menu-button"><a href="/PaginaUser/"></a></div>
+        <div class="menu-button"><a href="/PaginaGaragem/" /></a></div>
+        <div class="menu-button"><a href="/LicitacoesUser/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFavoritos/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFuturos/"></a></div>
+        <div class="menu-button"><a href="/AtividadeUser/"></a></div>
+    </div>
+    <div class="page-background"></div>
+    <div class="content">
+        <div class="content">
+            <form method="get" action="/AtividadeUser/">
+                <div class="filters">
+                    <input type="text" name="marca" placeholder="Pesquisar por marca">
+                    <select name="ordenacao">
+                        <option value="dataCrescente">Data - Crescente</option>
+                        <option value="dataDecrescente">Data - Decrescente</option>
+                        <option value="valorCrescente">Valor - Crescente</option>
+                        <option value="valorDecrescente">Valor - Decrescente</option>
+                    </select>
+                    <button type="submit">Filtrar</button>
+                </div>
+            </form>
+        </div>
+        @if (Model.Vendas != null)
+        {
+            @foreach (var venda in Model.Vendas)
+            {
+                if (venda.Carro != null)
+                {
+                    <div class="auction-container">
+                        <div class="auction-item">
+                            <div class="auction-image">
+                                <img src="@venda.Carro.ImagemUrl" alt="Imagem do Leilão">
+                            </div>
+                            <div class="auction-details">
+                                <div class="auction-name">@venda.Carro.Marca - @venda.Carro.Modelo - @venda.Carro.Ano - @venda.Carro.Km km</div><br>
+                                <div class="auction-info">
+                                    <strong> Vendido por: @venda.Preco</strong><br>
+                                    <span> Em: @venda.Data_fim.ToString("dd/MM/yyyy")</span><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        }
+    </div>
+    <div class="content">
+        @if (Model.Compras != null)
+        {
+            @foreach (var compra in Model.Compras)
+            {
+                if (compra.Carro != null)
+                {
+                    <div class="auction-container">
+                        <div class="auction-item">
+                            <div class="auction-image">
+                                <img src="@compra.Carro.ImagemUrl" alt="Imagem do Leilão">
+                            </div>
+                            <div class="auction-details">
+                                <div class="auction-name">@compra.Carro.Marca - @compra.Carro.Modelo - @compra.Carro.Ano - @compra.Carro.Km km</div><br>
+                                <div class="auction-info">
+                                    <strong> Comprado por: @compra.Preco</strong><br>
+                                    <span> Em: @compra.Data_fim.ToString("dd/MM/yyyy")</span><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        }
+    </div>
+</body>
+</html>

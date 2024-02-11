@@ -1,0 +1,41 @@
+﻿@page "/"
+@model RegisterModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carense</title>
+    <link href="~/css/register.css" rel="stylesheet">
+    <script src="~/js/register.js"></script>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="~/images/carensesimbolo.png" alt="Logotipo Carense" class="logo-normal">
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Registar</h2>
+            <form id="registerForm" method="post">
+                @Html.AntiForgeryToken()
+                <div class="input-box">
+                    <input name="Username" required="" placeholder="Username"/>
+                </div>
+                <div class="input-box">
+                    <input name="Email" required="" placeholder="Email"/>
+                </div>
+                <div class="input-box">
+                    <input name="Password" type="password" required="" placeholder="Password"/>
+                </div>
+                <div class="input-box">
+                    <input name="ConfirmPassword" type="password" required="" placeholder="Confirm Password"/>
+                </div>
+                <button type="button" onclick="submitRegisterForm()" class="submit-btn">Enviar</button>
+            </form>
+            <a href="/Login" class="account-link">Já possui conta?</a>
+        </div>
+    </div>
+</body>
+</html>
+
+                 
